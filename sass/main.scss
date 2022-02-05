@@ -111,6 +111,21 @@ body {
 	}
 }
 
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+// ------------------- "Both" allows you to force all animation elements to take values from "from" and when the animation ends all elements take values from "to" -------------------
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}
+
 // =================== HEADER ===================
 .header {
 	position: relative;
