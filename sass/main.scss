@@ -187,6 +187,27 @@ body {
 	}
 }
 
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImg("../img/m_paradise_3_640.jpg");
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&__title {
+		font-family: "Dancing Scripts", cursive;
+		font-size: 4.8rem;
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		padding: 1em 0;
+	}
+	hr {
+		color: $pure-white;
+	}
+}
+
 // =================== MEDIA ===================
 
 @media (min-width: 576px) {
@@ -223,17 +244,28 @@ body {
 		&__title {
 			font-size: 6.6rem;
 		}
-		&__text {
-			font-style: 2.2rem;
+		&__subtitle {
+			font-size: 2.2rem;
 		}
 		&__btn {
-			font-style: 1.6rem;
+			font-size: 1.6rem;
 		}
 	}
 
 	.dreams {
 		&__text {
 			font-size: 1.8rem;
+		}
+	}
+
+	.hero-img {
+		padding: 30rem 2em;
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+		&__text {
+			font-size: 2.2rem;
 		}
 	}
 }
@@ -269,6 +301,19 @@ body {
 		}
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+	.hero-img {
+		padding: 40rem 2em;
+		background-image: $blue-gradient, url("../img/d_paradise_3_640.jpg");
+
+		&__title {
+			font-size: 7.2rem;
+
+			hr {
+				width: 60%;
+				max-width: 900px;
+			}
 		}
 	}
 }
