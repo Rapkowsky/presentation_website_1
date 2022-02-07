@@ -9,6 +9,7 @@
 	height: 40px;
 	width: 60%;
 	background-color: $pure-white;
+	border-radius: 0 8px 0 0;
 
 	&-left {
 		bottom: -1px;
@@ -19,6 +20,7 @@
 		top: -1px;
 		right: -50px;
 		transform: skew(45deg);
+		border-radius: 0 0 0 8px;
 	}
 }
 

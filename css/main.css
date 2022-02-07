@@ -9,6 +9,7 @@
   height: 40px;
   width: 60%;
   background-color: #fff;
+  border-radius: 0 8px 0 0;
 }
 
 .white-block-left {
@@ -23,6 +24,7 @@
   right: -50px;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
+  border-radius: 0 0 0 8px;
 }
 
 .btn-special-animation {
@@ -505,6 +507,7 @@ body {
           box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
   background-color: #fff;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .offers__option-img {
@@ -522,6 +525,8 @@ body {
 
 .offers__option-info {
   padding: 2em;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .offers__option-heading {
@@ -578,6 +583,45 @@ body {
   .dreams__img {
     margin-bottom: 0;
     max-height: 300px;
+    border-radius: 8px;
+  }
+  .offers__option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .offers__option-img--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .offers__option-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 2.6rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
   }
 }
 
@@ -670,6 +714,15 @@ body {
   .hero-img__title hr {
     width: 60%;
     max-width: 900px;
+  }
+  .offers {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/d_offer_hero_1920.jpg");
+  }
+  .offers__option-heading {
+    font-size: 3.6rem;
+  }
+  .offers__option-text {
+    font-size: 1.5em;
   }
 }
 
