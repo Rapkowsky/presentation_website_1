@@ -178,6 +178,7 @@ body {
 	&__img {
 		width: 100%;
 		margin-bottom: 1em;
+		border-radius: 8px;
 	}
 	&__title {
 		margin-bottom: 0.5em;
@@ -413,7 +414,49 @@ body {
 		color: $dark;
 	}
 }
+// =================== Contact ===================
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+	.white-block-left {
+		background-color: $dark;
+	}
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
 
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+	&__form-input {
+		@include contactForm;
+	}
+	&__form-textarea {
+		@include contactForm;
+		max-width: 100%;
+		width: 100%;
+		min-width: 200px;
+		min-height: 100px;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-color;
+
+		&::before {
+			background-color: $secondary-color;
+		}
+	}
+}
 // =================== MEDIA ===================
 
 @media (min-width: 576px) {
@@ -437,7 +480,6 @@ body {
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
-			border-radius: 8px;
 		}
 	}
 	.offers {
@@ -469,7 +511,15 @@ body {
 		}
 	}
 }
-
+@media (min-width: 701px) {
+	.reviews {
+		&__box {
+			&-text {
+				min-height: 100px;
+			}
+		}
+	}
+}
 @media (min-width: 768px) {
 	.white-block {
 		width: 45%;
