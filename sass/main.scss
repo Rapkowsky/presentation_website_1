@@ -19,6 +19,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.6rem;
 }
+
 // =================== NAVIGATION ===================
 .burger-btn {
 	position: fixed;
@@ -126,6 +127,11 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
 // =================== HEADER ===================
 .header {
 	position: relative;
